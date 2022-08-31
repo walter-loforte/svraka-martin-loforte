@@ -1,0 +1,187 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: white;
+    height: 170px;
+    width: 100%;
+}
+
+main {
+    flex: auto;
+}
+
+footer {
+    height: 170px;
+}
+
+/**
+ * Images a now responsive
+ */
+ img {
+	max-width: 100%;
+	height: auto;
+}
+
+/**
+ * Limit the container in
+ * width for big screens
+ */
+.container {
+	width: 1920px;
+	max-width: 100%;
+	padding: 20px;
+	margin: 0 auto;
+}
+
+/**
+ * By using display: flex
+ * Logo and nav are in 2 cols
+ * align-items make them
+ * vertically centered
+ * justify-content distribute
+ * horizontal spaces around
+ * and flex-wrap break the
+ * things in two lines in
+ * small screens
+ */
+.main-header .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+/**
+ * The followings are to
+ * make things more
+ * clean and airy
+ * and contents centered
+ */
+.main-nav ul {
+	margin: 1em 0 .5em;
+	text-align: center;
+}
+.main-nav li {
+	display: inline;
+}
+.main-nav a {
+	display: inline-block;
+	padding: .5em 1.5em;
+}
+
+/**
+ * Space-around become
+ * Space-between to
+ * distribute space
+ * between the flex-items
+ */
+ @media (min-width: 960px) {
+	.main-header .container {
+		justify-content: space-between;
+	}
+}
+
+.navbar__enlace {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(32, 32, 32);
+}
+
+.navbar__enlace:hover {
+    color: rgb(160, 160, 160);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.redes {
+    text-decoration: none;
+}
+
+.redes img {
+    width: 40px;
+    height: 40px;
+}
+
+.social_section {
+    text-align: center;
+}
+
+.paula {
+    font-weight: bold;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.paula__contenido {
+    display: flex;
+    justify-content: center;
+}
+
+.paula__contenido p {
+    margin-top: 90px;
+}
+
+.svraka {
+    font-weight: bold;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.svraka__contenido {
+    display: flex;
+    justify-content: center;
+}
+
+.svraka__contenido p {
+    padding: auto;
+    margin-top: 90px;
+}
+
+
+.section {
+    padding: 60px;
+    margin: 0;
+}
+
+.work {
+    font-weight: bold;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.work__contenido {
+    display: flex;
+    justify-content: center;
+}
+
+.work__contenido p {
+    margin-top: 90px;
+}
+
+
